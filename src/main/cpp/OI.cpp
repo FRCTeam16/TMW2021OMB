@@ -25,7 +25,7 @@ OI::OI() {
 
     // SmartDashboard Buttons
     SmartDashboard::PutData("SetWheelOffsets3", new SetWheelOffsets());
-    SmartDashboard::PutData("ZeroGyro3", new ZeroGyro());
+    SmartDashboard::PutData("ZeroGyro4", new ZeroGyro());
     SmartDashboard::PutData("ZeroFeederArm3", new ZeroFeederArm());
     SmartDashboard::PutData("ZeroFeederArm HIGH3", new ZeroFeederArmHigh());
     SmartDashboard::PutData("ZeroTurretPosition3", new ZeroTurretPosition());
