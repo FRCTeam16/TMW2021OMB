@@ -30,7 +30,7 @@ SnatchAndScoot::SnatchAndScoot(std::shared_ptr<World> world)
     steps.push_back(new ConcurrentStep({
 		new SetGyroOffset(firstAngle),
         new SetFeederArmPosition(FeederArm::Position::kVertical, 0.25_s),
-        new SetTurretPosition(-451, 0.2_s),
+        new SetTurretPosition(-473, 0.2_s), // -451
 		new Delay(0.75)
 	}));
 
@@ -41,7 +41,7 @@ SnatchAndScoot::SnatchAndScoot(std::shared_ptr<World> world)
         grabOppoBalls,
         new SetFeederArmPosition(FeederArm::Position::kZero, 0.25_s),
         new EnableIntake(true),
-        new SelectVisionPipeline(2),
+        new SelectVisionPipeline(0),
         new SetVisionOffsetDegrees(1),
         new SelectShootingProfile(ShootingProfile::kMedium)
     }));

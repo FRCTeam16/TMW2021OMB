@@ -16,8 +16,8 @@ FeederArm::FeederArm()
     armMotor->ConfigForwardSoftLimitEnable(true);
     armMotor->ConfigReverseSoftLimitEnable(true);
 
-    armMotor->SetNeutralMode(ctre::phoenix::motorcontrol::NeutralMode::Brake);
-    armMotorFollower->SetNeutralMode(ctre::phoenix::motorcontrol::NeutralMode::Brake);
+    armMotor->SetNeutralMode(ctre::phoenix::motorcontrol::NeutralMode::Coast);
+    armMotorFollower->SetNeutralMode(ctre::phoenix::motorcontrol::NeutralMode::Coast);
 
     //------------------
     // Configure Arm PID
